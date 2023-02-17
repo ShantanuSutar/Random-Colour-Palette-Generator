@@ -8,3 +8,21 @@ body {
   background-color: #80ffdb;
   font-family: cursive;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cards {
+  min-width: 200px;
+  min-height: 260px;
+  background-color: white;
+  padding: 10px;
+  margin: 1rem 3rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
