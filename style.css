@@ -17,6 +17,7 @@ body {
   justify-content: center;
   position: relative;
 }
+
 .cards {
   min-width: 200px;
   min-height: 260px;
@@ -29,7 +30,6 @@ body {
 .cards .color {
   min-height: 10rem;
   border-radius: 7px;
-  background-color: orange;
 }
 .cards .color:hover {
   cursor: pointer;
