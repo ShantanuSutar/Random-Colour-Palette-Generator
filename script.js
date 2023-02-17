@@ -5,6 +5,9 @@ const container = document.querySelector('.container');
 const maxColors = 10;
 
 const createPalette = () => {
+
+    container.innerHTML = '';
+
     for(let i = 0; i < maxColors; i++){
     let randomHexNum = '#'+ Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0");
     randomHexNum.toUpperCase();
