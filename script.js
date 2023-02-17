@@ -16,6 +16,14 @@ const createPalette = () => {
     card.classList.add('cards');
     card.innerHTML = `<section class="color" style="background-color: ${randomHexNum};"></section><p class="name">${randomHexNum}</p>`;
     container.appendChild(card);
+    
+    card.addEventListener('click', function(){
+        const name = card.querySelector('.name');
+        const num = name.textContent; 
+        name.textContent = 'Copied';
+        setTimeout(() => name.textContent = num, 1000);
+        navigator.clipboard.writeText(num);
+    })
 }
 }
 
