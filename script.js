@@ -3,7 +3,6 @@
 const button = document.querySelector('.btn');
 const container = document.querySelector('.container');
 const maxColors = 10;
-
 const createPalette = () => {
 
     container.innerHTML = '';
